@@ -65,6 +65,7 @@ function App() {
   const jumpTo = (move) => {
     setStepNumber(move);
     setXIsNext( (move % 2) === 0);
+    setHistory(history.slice(0, move + 1));
   }
 
   return (
